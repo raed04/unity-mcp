@@ -17,7 +17,7 @@ The window has four areas: Server Status, Unity Bridge, MCP Client Configuration
    - Install Python and/or uv if missing.
    - For Claude Code, ensure the `claude` CLI is installed.
 4. Click “Start Bridge” if the Unity Bridge shows “Stopped”.
-5. Use your MCP client (Cursor, VS Code, Windsurf, Claude Code) to connect.
+5. Use your MCP client (Cursor, VS Code, Windsurf, Claude Code, Warp AI, Kiro) to connect.
 
 ---
 
@@ -44,9 +44,9 @@ The window has four areas: Server Status, Unity Bridge, MCP Client Configuration
 ---
 
 ## MCP Client Configuration
-- Select Client: Choose your target MCP client (e.g., Cursor, VS Code, Windsurf, Claude Code).
+- Select Client: Choose your target MCP client (e.g., Cursor, VS Code, Windsurf, Claude Code, Warp AI, Kiro).
 - Per-client actions:
-  - Cursor / VS Code / Windsurf:
+  - Cursor / VS Code / Windsurf / Warp AI / Kiro:
     - Auto Configure: Writes/updates your config to launch the server via uv:
       - Command: uv
       - Args: run --directory <pythonDir> server.py

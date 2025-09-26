@@ -8,6 +8,7 @@ namespace MCPForUnity.Editor.Models
         VSCode,
         Windsurf,
         Kiro,
+        WarpAI,
     }
 }
 

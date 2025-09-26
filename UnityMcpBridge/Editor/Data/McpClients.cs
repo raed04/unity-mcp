@@ -159,6 +159,36 @@ namespace MCPForUnity.Editor.Data
                 mcpType = McpTypes.Kiro,
                 configStatus = "Not Configured",
             },
+            // 7) Warp AI
+            new()
+            {
+                name = "Warp AI",
+                windowsConfigPath = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "warp",
+                    "Warp",
+                    "data",
+                    "mcp",
+                    "mcp.json"
+                ),
+                macConfigPath = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+                    "Library",
+                    "Application Support",
+                    "dev.warp.Warp-Stable",
+                    "mcp",
+                    "mcp.json"
+                ),
+                linuxConfigPath = Path.Combine(
+                    Environment.GetEnvironmentVariable("XDG_STATE_HOME") ??
+                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), ".local", "state"),
+                    "warp-terminal",
+                    "mcp",
+                    "mcp.json"
+                ),
+                mcpType = McpTypes.WarpAI,
+                configStatus = "Not Configured",
+            },
         };
 
         // Initialize status enums after construction

@@ -101,6 +101,13 @@ namespace MCPForUnity.Editor.Windows
                     instructionStyle
                 );
             }
+            else if (mcpClient?.mcpType == McpTypes.WarpAI)
+            {
+                EditorGUILayout.LabelField(
+                    "    a) Going to Warp AI settings and configuring MCP servers",
+                    instructionStyle
+                );
+            }
             EditorGUILayout.LabelField("    OR", instructionStyle);
             EditorGUILayout.LabelField(
                 "    b) Opening the configuration file at:",

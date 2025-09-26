@@ -116,6 +116,12 @@ namespace MCPForUnity.Editor.Helpers
                     unity["disabled"] = false;
                 }
             }
+
+            // Add working_directory for Warp AI for better path resolution
+            if (client != null && client.mcpType == McpTypes.WarpAI)
+            {
+                unity["working_directory"] = effectiveDir;
+            }
         }
 
         private static JObject EnsureObject(JObject parent, string name)

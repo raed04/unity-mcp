@@ -1,11 +1,12 @@
 name: Unity Tests
 
 on:
+  workflow_dispatch: {}
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - TestProjects/UnityMCPTests/**
-      - UnityMcpBridge/Editor/**
+      - MCPForUnity/Editor/**
       - .github/workflows/unity-tests.yml
 
 jobs:
@@ -20,7 +21,7 @@ jobs:
         testMode:
           - editmode
         unityVersion:
-          - 2021.3.45f1
+          - 2021.3.45f2
     steps:
       # Checkout
       - name: Checkout repository
